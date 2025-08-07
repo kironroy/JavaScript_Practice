@@ -2,6 +2,8 @@
 
 // -- SCOPING --  Scope chain
 
+console.log('-- SCOPING --  Scope chain');
+
 // calculateAge is defined in global scope
 
 function calculateAge(birthYear) {
@@ -35,7 +37,7 @@ function calculateAgeTwo(birthYear) {
     }
 
     // outstuff = '';
-    
+
     // console.log(str); // ERROR: str is not defined in this scope
     console.log(millennial);
     // console.log(addSum(5, 10)); // ERROR: addSum is not defined in this scope will not work in strict mode
@@ -54,3 +56,5 @@ calculateAge();
 calculateAgeTwo(1985);
 
 // console.log(age); // ERROR: age is not defined in global scope
+
+console.log('---------------------------------------');
