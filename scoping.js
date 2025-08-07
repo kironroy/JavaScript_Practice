@@ -20,6 +20,7 @@ function calculateAgeTwo(birthYear) {
   const age = 2032 - birthYear;
   function postAge() {
     const outstuff = `${firstPerson} You are ${age}, born in ${birthYear}`;
+    // let outstuff = `${firstPerson} You are ${age}, born in ${birthYear}`;
     console.log(outstuff);
 
     if (birthYear >= 1981 && birthYear <= 1996) {
@@ -32,6 +33,9 @@ function calculateAgeTwo(birthYear) {
         return num1 + num2;
       }
     }
+
+    // outstuff = '';
+    
     // console.log(str); // ERROR: str is not defined in this scope
     console.log(millennial);
     // console.log(addSum(5, 10)); // ERROR: addSum is not defined in this scope will not work in strict mode
