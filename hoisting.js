@@ -71,7 +71,7 @@ console.log(xx === window.xx); // true
 console.log(yy === window.yy); // false, because let is block scoped');
 console.log(zz === window.zz); // false, because const is block scoped
 
-
+console.log('---------------------------------------');
 
 
 
