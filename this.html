@@ -2,51 +2,54 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Practice</title>
-    <link rel="stylesheet" href="site.css">
-    <script src="thisKeyword.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Practice</title>
+  <link rel="stylesheet" href="site.css">
+  <script src="thisKeyword.js" defer></script>
 </head>
 
 <body>
-    <main>
-        <h1><code>this</code> keyword</h1>
-        <p>Please open the console. ➡️</p>
-        <p><code>Ctrl + Shift + J</code> to see the JavaScript console.</p>
-
+  <main>
+    <h1><code>this</code> keyword</h1>
         <p>
-            <b><code>this</code> keyword:</b> is a special variable that is created for every execution context (every
-            function).
-            It takes a value of (points to) the "owner" of the function. in which the keyword is used.
-        </p>
+        <ul class="navigation">
+          <li><a href="index.html">home</a></li>
+          <li><a href="overview.html">overview</a></li>
+          <li><a href="object-refs.html">object references</a> </li>
 
-        <p>Execution Context</p>
-        <ul>
-            <li>Variable environment</li>
-            <li>Scope chain</li>
-            <li><code>this</code></li>
-        </ul>
-
-        <p>4 different ways a function can be called</p>
-
-        <ul>
-            <li><b>Method:</b> A function attached to an object. <code>this</code> points to the object
-                that is calling the method</li>
-            <li><b>Simple:</b> <code>this</code> is undefined in strict mode</li>
-            <li><b>Arrow:</b> <code>this</code> will be parent function</li>
-            <li><b>Event listener:</b><code>this</code> = to the DOM element that the handler is attached too.</li>
-        </ul>
-
-        <p><code>this</code> does not point to the function itself nor the variable environment.</p>
-
-        <p>
-    <ul class="navigation">
-            <li><a href="index.html">home</a></li>
-            <li><a href="overview.html">overview</a></li>
         </ul>
         </p>
-    </main>
+    <p>Please open the console. ➡️</p>
+    <p><code>Ctrl + Shift + J</code> to see the JavaScript console.</p>
+
+    <p>
+      <b><code>this</code> keyword:</b> is a special variable that is created for every execution context (every
+      function).
+      It takes a value of (points to) the "owner" of the function. in which the keyword is used.
+    </p>
+
+    <p>Execution Context</p>
+    <ul>
+      <li>Variable environment</li>
+      <li>Scope chain</li>
+      <li><code>this</code></li>
+    </ul>
+
+    <p>4 different ways a function can be called</p>
+
+    <ul>
+      <li><b>Method:</b> A function attached to an object. <code>this</code> points to the object
+        that is calling the method</li>
+      <li><b>Simple:</b> <code>this</code> is undefined in strict mode</li>
+      <li><b>Arrow:</b> <code>this</code> will be parent function</li>
+      <li><b>Event listener:</b><code>this</code> = to the DOM element that the handler is attached too.</li>
+    </ul>
+
+    <p><code>this</code> does not point to the function itself nor the variable environment.</p>
+
+
+  </main>
 </body>
 
 </html>
