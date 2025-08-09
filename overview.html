@@ -45,6 +45,25 @@
     </p>
     <hr>
     <h2>Memory management</h2>
+    <h3>Primitives</h3>
+    <h4>Primitives are in the Call Stack (References to Objects)</h4>
+    <ul>
+      <li>Number</li>
+      <li>String</li>
+      <li>Boolean</li>
+      <li>Undefined</li>
+      <li>Null</li>
+      <li>Symbol</li>
+      <li>Big Int</li>
+    </ul>
+    <h3>Objects</h3>
+    <h4>Objects are in the heap</h4>
+    <ul>
+      <li>Object literals</li>
+      <li>Arrays</li>
+      <li>Functions</li>
+    </ul>
+    <hr>
     <p>For different type of values memory is allocated in different places.</p>
     <p>
     <ul class="overview">
@@ -72,27 +91,27 @@
     <p>When the variable is no longer needed the value is deleted from memory to free up resources.
       The released memory is used for new values
     </p>
-    <h3>Primitives</h3>
-    <h4>Primitives are in the Call Stack (References to Objects)</h4>
-    <ul>
-      <li>Number</li>
-      <li>String</li>
-      <li>Boolean</li>
-      <li>Undefined</li>
-      <li>Null</li>
-      <li>Symbol</li>
-      <li>Big Int</li>
-    </ul>
-    <h3>Objects</h3>
-    <h4>Objects are in the heap</h4>
-    <ul>
-      <li>Object literals</li>
-      <li>Arrays</li>
-      <li>Functions</li>
-    </ul>
+    <p><b>Call Stack:</b> variable environment is simply deleted when Execution Context pops a variable off the stack
+    </p>
+    <p><b>Garbage Collection</b>is central memory management tool in any JavaScript engine. It acts automatically. 
+      Developers cannot control when heap memory is cleaned by Garbage collection</p>
+      <ul>
+        <li>How much memory as app is using.</li>
+        <li>Which engine is being used.</li>
+      </ul>
+    <p>All model JavaScript engine use a mark-and-swap algorithm</p>
+    <ol>
+      <li><b>Mark:</b>all objects that are reachable from a root as "alive."</li>
+      <li><b>Sweep:</b>delete un-marked (unreachable) objects and reclaim memory allocations.</li>
+    </ol>
+    <h3>Memory Leaks</h3>
+    <p>
+      Memory leaks occur when objects are no longer needed by our application. Garbage collection 
+      incorrectly tries to reach an object. Object is marked as alive.  This adds to clutter.
+    </p>
+
     <button id="backToTop" title="Back to top">Top</button>
   </main>
 </body>
+
 </html>
-
-
