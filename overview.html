@@ -24,6 +24,7 @@
 
     <p>
     <h2>Basics</h2>
+    <hr>
     <ul class="overview">
       <li>JavaScript is a high-level programming language that abstracts memory management through garbage collection,
         automatically reclaiming unused objects.</li>
@@ -42,7 +43,9 @@
         instantaneously for execution.</li>
     </ul>
     </p>
+    <hr>
     <h2>Memory management</h2>
+    <p>For different type of values memory is allocated in different places.</p>
     <p>
     <ul class="overview">
       <li>JavaScript manages memory automatically through garbage collection, which reclaims memory from objects that
@@ -53,13 +56,43 @@
       <li>Tools like Chrome DevTools can help identify and resolve memory leaks.</li>
     </ul>
     <h3>Memory life cycle</h3>
-    <h3>Memory use</h3>
-    <h3>Release of Memory</h3>
+    <p>
+      A piece of memory is allocated when a variable is created, and it remains allocated until the variable goes out.
+      Whenever a developer creates a variable, the JavaScript engine allocates memory for it.
     </p>
-
-
-
+    <p>
+      <code>let x = 10;</code> allocates memory for the variable <code>x</code>.
+    </p>
+    <h3>Memory use</h3>
+    <p>
+      While code is running, the value is written, read and updated in the allocated piece of memory
+    </p>
+    <p><code>x = x + 6; round(x);</code></p>
+    <h3>Release of Memory</h3>
+    <p>When the variable is no longer needed the value is deleted from memory to free up resources.
+      The released memory is used for new values
+    </p>
+    <h3>Primitives</h3>
+    <h4>Primitives are in the Call Stack (References to Objects)</h4>
+    <ul>
+      <li>Number</li>
+      <li>String</li>
+      <li>Boolean</li>
+      <li>Undefined</li>
+      <li>Null</li>
+      <li>Symbol</li>
+      <li>Big Int</li>
+    </ul>
+    <h3>Objects</h3>
+    <h4>Objects are in the heap</h4>
+    <ul>
+      <li>Object literals</li>
+      <li>Arrays</li>
+      <li>Functions</li>
+    </ul>
+    <button id="backToTop" title="Back to top">Top</button>
   </main>
 </body>
-
 </html>
+
+
