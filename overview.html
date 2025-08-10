@@ -12,13 +12,7 @@
 <body>
   <main>
     <h1>Overview of JavaScript</h1>
-    <p>
-    <ul class="navigation">
-      <li><a href="index.html">home</a></li>
-      <li><a href="this.html">this keyword practice</a></li>
-      <li><a href="object-refs.html">object references</a></li>
-    </ul>
-    </p>
+    <a href="index.html" class="home">home</a>
     <p>Please open the console. ➡️</p>
     <p><code>Ctrl + Shift + J</code> to see the JavaScript console.</p>
 
@@ -93,12 +87,12 @@
     </p>
     <p><b>Call Stack:</b> variable environment is simply deleted when Execution Context pops a variable off the stack
     </p>
-    <p><b>Garbage Collection</b>is central memory management tool in any JavaScript engine. It acts automatically. 
+    <p><b>Garbage Collection</b>is central memory management tool in any JavaScript engine. It acts automatically.
       Developers cannot control when heap memory is cleaned by Garbage collection</p>
-      <ul>
-        <li>How much memory as app is using.</li>
-        <li>Which engine is being used.</li>
-      </ul>
+    <ul>
+      <li>How much memory as app is using.</li>
+      <li>Which engine is being used.</li>
+    </ul>
     <p>All model JavaScript engine use a mark-and-swap algorithm</p>
     <ol>
       <li><b>Mark:</b>all objects that are reachable from a root as "alive."</li>
@@ -106,8 +100,8 @@
     </ol>
     <h3>Memory Leaks</h3>
     <p>
-      Memory leaks occur when objects are no longer needed by our application. Garbage collection 
-      incorrectly tries to reach an object. Object is marked as alive.  This adds to clutter.
+      Memory leaks occur when objects are no longer needed by our application. Garbage collection
+      incorrectly tries to reach an object. Object is marked as alive. This adds to clutter.
     </p>
 
     <button id="backToTop" title="Back to top">Top</button>
