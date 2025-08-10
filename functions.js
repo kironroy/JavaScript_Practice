@@ -8,7 +8,6 @@ function logWithBlankLines(message) {
   console.log('');
 }
 
-
 const bookingsArr = [];
 
 const createBooking = function (flightNum, numPassengers = 2, price = 185) {
@@ -28,8 +27,6 @@ const createBooking = function (flightNum, numPassengers = 2, price = 185) {
 
 createBooking('LH123');
 createBooking('LH123', 4, 909);
-
-
 
 logWithBlankLines('-- How passing arguments work, Value vs Ref --');
 
@@ -56,15 +53,47 @@ console.log(tom);
 
 const newPassport = function (person) {
   person.passport = Math.trunc(Math.random() * 1000000000);
-}
+};
 
 newPassport(tom);
 checkIn(flight, tom);
 
-// JavaScript only does passing by value 
+// JavaScript only does passing by value
 
 logWithBlankLines('-- Functions as First-Class Citizens --');
 
+console.log('High Order Functions');
 
+const singleWord = function (string) {
+  return string.replace(/ /g, '').toLowerCase();
+};
 
+const upperFirstWord = function (string) {
+  const [first, ...others] = string.split(' ');
+  return [first.toUpperCase(), ...others].join(' ');
+};
 
+// higher-order function
+const wordTransformer = function (str, fn) {
+  console.log(`Original string: ${str}`);
+  console.log(`Word transformed: ${fn(str)}`);
+  console.log(`Transformed by: ${fn.name}`);
+};
+
+// upperFirstWord is only passed in bot called!
+wordTransformer('JavaScript is the best', upperFirstWord);
+wordTransformer('JavaScript is the best', singleWord);
+
+// high5 is the callback function
+const high5 = function () {
+  console.log('👋');
+};
+
+// higher-order function
+// JavaScript uses callbacks all the time
+
+document.body.addEventListener('click', high5);
+
+const people = ['Vini', 'Tina', 'Mina', 'Reene'];
+
+people.forEach(high5);
