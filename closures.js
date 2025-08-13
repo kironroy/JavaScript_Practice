@@ -1,5 +1,12 @@
 'use strict';
 
+function logWithBlankLines(message) {
+  console.log('');
+  console.log(message);
+  console.log('');
+}
+
+
 // execution context
 // call stack
 // scope chain
@@ -38,4 +45,8 @@ booker(); // 1 passengers
 booker(); // 2 passengers
 booker(); // 3 passengers
 
-// HOW DOES BOOKER REMEMBER THE PASSENGER COUNT?
+
+console.dir(booker); // function
+// booker still has access to the passengerCount variable
+
+logWithBlankLines('-- 3 examples of Closures --');
