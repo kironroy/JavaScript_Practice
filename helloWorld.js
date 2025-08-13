@@ -1,9 +1,9 @@
 'use strict';
 
 console.log(
-  '%cHello... %cWorld! 🌍',
-  'color: white; background: blue; padding: 4px;',
-  'color: green; font-weight: bold;'
+  '%cThank You Jonas Schmedtmann! %c🙏 ',
+  'color: #FFCC00; background: #000; padding: 14px; font-size: 16px; font-family: Arial, monospace;',
+  'color: black; background: #DD0000; padding: 14px; font-size: 16px; font-family: Arial, monospace;'
 );
 
 const btn = document.getElementById('backToTop');
