@@ -1,46 +1,41 @@
 'use strict';
 
-function createCounter() {
-  let count = 0; // This variable is enclosed
+// execution context
+// call stack
+// scope chain
+// closure bring all concepts together
 
-  return function() {
-    count++;
-    console.log(`Current count: ${count}`);
+// closure is not a feature we explicitly use.
+// closures happen automatically  in certain situations.
+// recognize those situations.
+
+// A closure happens when a function remembers and
+// can still access variables from the scope in which it was created
+// even after that scope has finished executing.
+
+console.log('-- Closures --');
+
+const secureBooking = function () {
+  // private variables, can't be accessed from outside
+  let passengerCount = 0;
+
+  return function () {
+    passengerCount++;
+    console.log(
+      `${passengerCount} ${passengerCount === 1 ? 'passenger' : 'passengers'}`
+    );
   };
-}
+};
 
-const counter = createCounter();
-counter(); // Current count: 1
-counter(); // Current count: 2
-counter(); // Current count: 3
+// functions returning a new function
+const booker = secureBooking(); // booker is a closure
+// Booker finishes its execution context
+// execution context is removed from the call stack
 
-console.log('-----------------------------');
+// bookers are in the global scope
 
-function createTextFormatter(style) {
-  return function(text) {
-    switch (style) {
-      case 'upper':
-        return text.toUpperCase();
-      case 'lower':
-        return text.toLowerCase();
-      case 'title':
-        return text
-          .split(' ')
-          .map(word => word[0].toUpperCase() + word.slice(1).toLowerCase())
-          .join(' ');
-      default:
-        return text;
-    }
-  };
-}
+booker(); // 1 passengers
+booker(); // 2 passengers
+booker(); // 3 passengers
 
-// Try it out:
-const shout = createTextFormatter('upper');
-const whisper = createTextFormatter('lower');
-const headline = createTextFormatter('title');
-
-console.log(shout('hello world'));     // "HELLO WORLD"
-console.log(whisper('HELLO WORLD'));   // "hello world"
-console.log(headline('hello world'));  // "Hello World"
-
-
+// HOW DOES BOOKER REMEMBER THE PASSENGER COUNT?
