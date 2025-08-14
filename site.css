@@ -27,29 +27,27 @@ body {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
-/* Responsive typography */
+/* Typography */
 h1,
 h2,
 h3 {
   margin-top: 0;
   font-weight: 600;
+  text-transform: capitalize;
+  text-align: center;
 }
 
 h1 {
   font-size: clamp(1.75rem, 5vw, 2.5rem);
-  text-transform: capitalize;
-  text-align: center;
 }
+
 h2 {
   font-size: clamp(1.5rem, 4vw, 2rem);
-  text-transform: capitalize;
-  text-align: center;
   padding: 10px;
 }
+
 h3 {
   font-size: clamp(1.2rem, 3vw, 1.5rem);
-  text-transform: capitalize;
-  text-align: center;
 }
 
 .navigation {
@@ -59,6 +57,7 @@ h3 {
 p {
   margin: 20px;
   line-height: 1.8;
+  font-size: 1.05rem;
 }
 
 .overview li {
@@ -68,7 +67,7 @@ p {
   font-size: 1rem;
 }
 
-/* Responsive layout */
+/* Layout */
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -82,6 +81,7 @@ p {
   padding: 16px;
   margin-bottom: 16px;
   border-radius: 6px;
+  font-size: 1rem;
 }
 
 #backToTop {
@@ -100,26 +100,85 @@ p {
   z-index: 1000;
   transition: background 0.2s;
 }
+
 #backToTop:hover {
   background: #005fa3;
 }
 
-/* Mobile-specific adjustments */
-@media (max-width: 768px) {
+/* Mobile: iPhone */
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 18px;
+  }
+
   body {
-    font-size: 16px;
-    padding: 12px;
+    font-size: 20px;
+    padding: 16px;
   }
 
-  .container {
-    padding: 12px;
+  h1 {
+    font-size: clamp(1.5rem, 4vw, 2rem);
   }
 
+  h2 {
+    font-size: clamp(1.75rem, 5vw, 2.25rem);
+  }
+
+  h3 {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+  }
+
+  p,
   .overview li {
-    font-size: 0.95rem;
+    font-size: 1.1rem;
   }
 
+  .container,
   .col {
-    padding: 12px;
+    padding: 16px;
+  }
+
+  #backToTop {
+    padding: 14px 28px;
+    font-size: 1.1rem;
+  }
+}
+
+/* Tablet: iPad */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  html {
+    font-size: 17px;
+  }
+
+  body {
+    font-size: 19px;
+    padding: 18px;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 5vw, 2.5rem);
+  }
+
+  h2 {
+    font-size: clamp(1.75rem, 4.5vw, 2.25rem);
+  }
+
+  h3 {
+    font-size: clamp(1.4rem, 3.5vw, 2rem);
+  }
+
+  p,
+  .overview li {
+    font-size: 1.05rem;
+  }
+
+  .container,
+  .col {
+    padding: 16px;
+  }
+
+  #backToTop {
+    padding: 14px 28px;
+    font-size: 1.05rem;
   }
 }

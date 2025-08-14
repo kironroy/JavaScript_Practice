@@ -7,4 +7,3 @@ function logWithBlankLines(message) {
 }
 
 console.log('--  JavaScript --');
-Asynchronous
