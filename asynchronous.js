@@ -48,3 +48,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   document.body.appendChild(ol);
 });
+
+// callback functions alone don not make code asynchronous
+// event listeners also do not make code asynchronous
