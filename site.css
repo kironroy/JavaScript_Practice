@@ -19,6 +19,12 @@ body {
   padding: 20px;
 }
 
+hr {
+  border: none;
+  border-top: 1.5px solid #4f4f4f;
+  margin: 32px 0;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -88,21 +94,23 @@ p {
   position: fixed;
   bottom: 32px;
   right: 32px;
-  background: #0074d9;
-  color: #fff;
+  background: #f7e018;
+  color: #000;
   border: none;
   border-radius: 50px;
   padding: 12px 24px;
   font-size: 1rem;
+  font-weight: bold;
   cursor: pointer;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 8px #00000026;
   display: none;
   z-index: 1000;
   transition: background 0.2s;
 }
 
 #backToTop:hover {
-  background: #005fa3;
+  background: #060606;
+  color: #f7e018;
 }
 
 /* Mobile: iPhone */
