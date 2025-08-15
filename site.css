@@ -12,7 +12,7 @@ body {
   font-size: 18px;
   line-height: 1.6;
   background: #f9f9f9;
-  color: #222;
+  color: #252525;
 }
 
 .home {
@@ -21,7 +21,7 @@ body {
 
 hr {
   border: none;
-  border-top: 1.5px solid #4f4f4f;
+  border-top: 1.5px solid #cdcdcd;
   margin: 32px 0;
 }
 
