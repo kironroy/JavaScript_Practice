@@ -156,6 +156,7 @@ p {
   display: none;
   z-index: 1000;
   transition: background 0.2s;
+  opacity: 80%;
 }
 
 #backToTop:hover {
