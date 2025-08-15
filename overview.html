@@ -20,21 +20,25 @@
     <h2>Basics</h2>
     <hr>
     <ul class="overview">
-      <li>JavaScript is a high-level programming language that abstracts memory management through garbage collection,
-        automatically reclaiming unused objects.</li>
-      <li>It uses a prototype-based, object-oriented approach where nearly everything is treated as an object, except
-        for
-        primitive values like numbers and strings.</li>
-      <li>Arrays and objects are created from blueprints; arrays originate from an array blueprint.</li>
-      <li>JavaScript supports first-class functions, allowing functions to be passed as arguments or returned by other
-        functions for enhanced flexibility.</li>
-      <li>As a dynamically typed language, JavaScript does not require explicit type definitions for variables.</li>
-      <li>Its concurrency model defines how the engine manages multiple tasks.</li>
-      <li>JavaScript executes in a single thread and uses an event loop to handle time-consuming operations in the
-        background, reintegrating them into the main thread upon completion.</li>
-      <li>The JavaScript engine, such as the widely used V8 engine, executes JavaScript code.</li>
-      <li>Modern JavaScript engines feature just-in-time compilation, converting the entire codebase into machine code
-        instantaneously for execution.</li>
+      <li>JavaScript is a <b>high-level programming language.</b> It abstracts memory management through garbage
+        collection. Automatic reclaiming of unused objects.</li>
+      <li>It is prototype-based. It uses an object-oriented approach. Almost everything is an object. The exceptions are
+        primitive
+        values: numbers and strings.</li>
+      <li>Blueprints create arrays and objects. Arrays originate from an array blueprint.</li>
+      <li>JavaScript supports first-class functions. Functions can pass as arguments or returned by other functions for
+        enhanced
+        flexibility.</li>
+      <li>JavaScript is <b>dynamically typed</b>. No need to explicit type definitions for variables.
+      </li>
+      <li>Its concurrency model defines how the engine manages many tasks.</li>
+      <li>JavaScript executes in a single thread. It uses an <b>event loop </b> to handle time-consuming operations in
+        the
+        background. Then it reintegrates them into the main thread upon completion.</li>
+      <li>The <b>V8</b> engine, executes JavaScript code.</li>
+      <li>Modern JavaScript engines use <b>just-in-time (JIT) compilation.</b> The entire code base converted into
+        machine code. This
+        happens fast.</li>
     </ul>
     </p>
     <hr>
@@ -58,50 +62,55 @@
       <li>Functions</li>
     </ul>
     <hr>
-    <p>For different type of values memory is allocated in different places.</p>
+    <p>For different type of values ➡️ Memory is allocated in different places.</p>
     <p>
     <ul class="overview">
-      <li>JavaScript manages memory automatically through garbage collection, which reclaims memory from objects that
-        are no longer in use.</li>
-      <li>Developers can influence garbage collection by removing references to objects, allowing the engine to reclaim
+      <li>It abstracts memory management through garbage collection. Automatic reclaiming of unused objects.</li>
+      <li>Developers can influence garbage collection by removing references to objects. This allows the engine to
+        reclaim
         memory.</li>
-      <li>Memory leaks can occur if references to unused objects are not removed, preventing garbage collection.</li>
+      <li>Memory leaks can occur if references to unused objects are not removed. Garbage collection cannot reclaim
+        memory for these objects.</li>
       <li>Tools like Chrome DevTools can help identify and resolve memory leaks.</li>
     </ul>
     <h3>Memory life cycle</h3>
     <p>
-      A piece of memory is allocated when a variable is created, and it remains allocated until the variable goes out.
-      Whenever a developer creates a variable, the JavaScript engine allocates memory for it.
+      Memory allocated when creating a variable. It remains allocated until the variable goes out. Whenever a developer
+      creates a variable, the JavaScript engine allocates memory for it.
     </p>
     <p>
       <code>let x = 10;</code> allocates memory for the variable <code>x</code>.
     </p>
     <h3>Memory use</h3>
     <p>
-      While code is running, the value is written, read and updated in the allocated piece of memory
+      While the code runs, it writes, reads, and updates values in the designated memory space.
     </p>
     <p><code>x = x + 6; round(x);</code></p>
     <h3>Release of Memory</h3>
-    <p>When the variable is no longer needed the value is deleted from memory to free up resources.
-      The released memory is used for new values
+    <p>When the variable is no longer needed the value gets deleted from memory to free up resources. The released
+      memory used
+      for new values.
     </p>
     <p><b>Call Stack:</b> variable environment is simply deleted when Execution Context pops a variable off the stack
     </p>
-    <p><b>Garbage Collection: </b>is central memory management tool in any JavaScript engine. It acts automatically.
-      Developers cannot control when heap memory is cleaned by Garbage collection</p>
+    <p>Garbage Collection: a central memory management tool in every JavaScript engine. It reclaims unused heap memory
+      without
+      developer control. Factors:</p>
     <ul>
       <li>How much memory as app is using.</li>
       <li>Which engine is being used.</li>
     </ul>
-    <p>All model JavaScript engine use a mark-and-swap algorithm</p>
+    <p>All model JavaScript engine use a mark-and-swap algorithm.</p>
     <ol>
       <li><b>Mark: </b>all objects that are reachable from a root as "alive."</li>
       <li><b>Sweep: </b>delete un-marked (unreachable) objects and reclaim memory allocations.</li>
     </ol>
     <h3>Memory Leaks</h3>
     <p>
-      Memory leaks occur when objects are no longer needed by our application. Garbage collection
-      incorrectly tries to reach an object. Object is marked as alive. This adds to clutter.
+      Memory leaks occur when objects are no longer needed by the application. Garbage collection tries to reach an
+      object
+      because the object marked as alive. This adds to clutter.
+
     </p>
 
     <button id="backToTop" title="Back to top">Top</button>
