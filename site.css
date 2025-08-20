@@ -159,6 +159,11 @@ p {
   opacity: 80%;
 }
 
+.module-p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
 #backToTop:hover {
   background: #060606;
   color: #f7e018;
@@ -208,7 +213,7 @@ p {
     display: block;
   }
 
-   img {
+  img {
     max-width: 90%;
     height: auto;
     display: block;
