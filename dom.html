@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM</title>
+  <link rel="stylesheet" href="site.css">
+  <script src="dom.js" defer></script>
+</head>
+
+<body>
+  <main>
+    <h1>DOM</h1>
+    <a href="index.html" class="home">home</a>
+    <p>Please open the console. ➡️</p>
+    <p><code>Ctrl + Shift + J</code> to see the JavaScript console.</p>
+    <p>
+      <b>Document Object Model (DOM)</b> is a programming interface for web documents. It represents the page so that
+      programs
+      can change the document structure, style, and content. The DOM represents the document as nodes and objects; that
+      way, programming languages can interact with the page.
+    </p>
+    <p>
+      JavaScript can manipulate the DOM in various ways, such as changing the content of an element, modifying styles,
+      adding or
+      removing elements, and handling events. This allows developers to create dynamic and interactive web pages.
+    </p>
+    <h3>Example of DOM Manipulation</h3>
+    <p>
+      <button id="changeBtn">Click Me</button>
+    </p>
+    <p id="message">Original text</p>
+    <hr>
+    <h2>Drawbacks of Direct DOM Manipulation</h2>
+
+    <h3>State Management Chaos</h3>
+    <p>When you manipulate the DOM directly, you're often juggling state in both the DOM and your JavaScript. This leads
+      to
+      inconsistencies and bugs—especially when multiple components or events interact.</p>
+
+    <h3>Manual Syncing</h3>
+    <p>You have to manually ensure the UI reflects the current app state. Forget one update, and your UI becomes stale
+      or
+      misleading.</p>
+
+    <h3>Harder to Test and Maintain</h3>
+    <p>DOM-dependent logic is tightly coupled to the structure of your HTML. Refactoring becomes risky, and unit testing
+      is
+      more difficult.</p>
+
+    <h3>Performance Bottlenecks</h3>
+    <p>The real DOM is relatively slow to update. Frequent changes (e.g., in animations or dynamic lists) can cause
+      layout
+      thrashing and reflows, which degrade performance.</p>
+    <hr>
+    <h2>What React and Vue Solve</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Problem Area</th>
+          <th>React &amp; Vue Solution</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Manual DOM updates</td>
+          <td>Declarative rendering: You describe what the UI should look like, not how to change it.</td>
+        </tr>
+        <tr>
+          <td>State/UI sync</td>
+          <td>Reactive data binding: Changes in state automatically update the UI.</td>
+        </tr>
+        <tr>
+          <td>Performance</td>
+          <td>Virtual DOM: Efficient diffing and batching of updates before touching the real DOM.</td>
+        </tr>
+        <tr>
+          <td>Complexity</td>
+          <td>Component-based architecture: Encapsulates logic, styles, and markup for reuse.</td>
+        </tr>
+        <tr>
+          <td>Testing &amp; maintenance</td>
+          <td>Predictable state flow: Easier to debug, test, and refactor.</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+  </main>
+</body>
+
+</html>
