@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Console.Log()</title>
+  <!-- Optimized Meta Tags -->
+  <meta name="description" content="JavaScript console log, SEO, web development">
+  <meta property="og:title" content="JavaScript console log, GitHub, SEO, web development">
+  <meta property="og:description" content="JavaScript console log, SEO, web development">
+  <meta name="keywords" content="JavaScript console log, SEO, web development">
+  <meta property="og:url" content="https://js-console-log.netlify.app/">
+  <link rel="canonical" href="https://js-console-log.netlify.app/">
+  <meta property="og:image" content="/console_twitter.png">
+  <meta property="og:image:alt" content="Kiron Roy's logo.">
+  <meta property="og:locale:alt" content="en_US">
+  <meta property="og:type" content="website">
+  <meta property="twitter:card" content="summary_large_image">
+
+  <link rel="stylesheet" href="console.css">
+  <link rel="stylesheet" href="prism-vs.css">
+  <!-- Prism.js JS -->
+  <script defer src="console.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-javascript.min.js"></script>
+
+</head>
+
+<body>
+  <main>
+    <header>
+      <h1>JavaScript Console.Log()</h1>
+    </header>
+    <a href="index.html">Back to Homepage</a>
+    <hr>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Table of Contents</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a class="table-link" href="#seo-links">SEO links</a></td>
+        </tr>
+        <tr>
+          <td><a class="table-link" href="#console-log" style="font-family: monospace;"><span>console.log()</span></a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a class="table-link" href="https://gist.github.com/kironroy">GitHub Gists</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a class="table-link" href="https://github.com/kironroy">GitHub Main Page</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <section id="seo-links">
+      <ul>
+        <li><a href="https://ahrefs.com/">Ahrefs: Comprehensive SEO Tools and Resources</a></li>
+        <li><a href="https://trends.google.com/trends/">Google Trends: Analyze and Explore Popular Search Queries</a>
+        </li>
+        <li><a href="https://marketingplatform.google.com/about/analytics/">Google Analytics: Data Analysis and
+            Reporting for Websites</a></li>
+        <li><a href="https://backlinko.com/hub/seo/backlinks">Backlinko: Guide to Understanding and Building Quality
+            Backlinks</a></li>
+      </ul>
+    </section>
+    <section id="console-log">
+      <h3>How to use console.log() in most browsers</h3>
+      <ol>
+        <li><a href="https://treesinfo.netlify.app/">treesinfo.netlify.app</a></li>
+        <li>open a browser</li>
+        <li>right click > click inspect</li>
+        <li>look for console and click that</li>
+        <li><code>type console.log('Hello, World!') or code below</code></li>
+      </ol>
+      <div>
+        <img class="responsive" src="console.png" alt="Console image 2">
+        <img class="responsive" src="console1.png" alt="">
+      </div>
+      <!-- code below -->
+      <h2>count how many links on a page</h2>
+      <div class="code-container">
+        <pre><code class="language-js">
+const links = document.querySelectorAll('a');
+const numberOfLinks = links.length;
+console.log(`There are ${numberOfLinks} links on this page.`);
+        </code></pre>
+      </div>
+
+      <p>There are 486 links on this page.</p>
+
+      <h2>get document title for the current page</h2>
+
+      <pre><code class="language-js">
+const title = document.title;
+console.log(`Page title: ${title}`);
+    </code></pre>
+
+      <p>Page title: How to study</p>
+
+      <h2>Meta description</h2>
+      <pre><code class="language-js">
+const metaDescription = document.querySelector('meta[name="description"]').content;
+console.log(`Meta description: ${metaDescription}`);
+    </code></pre>
+
+      <p>Meta description: Dr. Vini Gora is a professional vocalist. She is a commercial contemporary singer based in
+        Los
+        Angeles. Her music is a beautiful blend of Classical & contemporary sounds.</p>
+
+      <h2>canonical link</h2>
+
+      <pre><code class="language-js">
+const canonicalLink = document.querySelector('link[rel="canonical"]').href;
+console.log(`Canonical link: ${canonicalLink}`);
+    </code></pre>
+
+      <p>Canonical link: https://kironroy.dev/</p>
+
+      <h2>link Analysis</h2>
+      <pre><code class="language-js">
+const links = document.querySelectorAll('a');
+console.log(`Total links: ${links.length}`);
+        
+links.forEach((link, i) => {
+console.log(`Link ${i + 1}: ${link.href}`);});
+</code></pre>
+      <ul class="no-bullets">
+        <li>Total links: 13</li>
+        <li>Link 1: https://kironroydev.netlify.app/#about</li>
+        <li>Link 2: https://kironroydev.netlify.app/#projects</li>
+        <li>Link 3: https://kironroydev.netlify.app/#contact</li>
+        <li>Link 4: https://github.com/kironroy</li>
+        <li>Link 5: https://kironroy.dev/art</li>
+        <li>Link 6: https://kironroyblog.netlify.app/</li>
+        <li>Link 7: https://books-database.netlify.app/</li>
+        <li>Link 8: https://js-console-log.netlify.app/</li>
+        <li>Link 9: https://hadden.netlify.app/</li>
+        <li>Link 10: https://mathematics-six.vercel.app/</li>
+        <li>Link 11: https://treesinfo.netlify.app/</li>
+        <li>Link 12: https://vinigora.netlify.app/</li>
+        <li>Link 13: https://kironroy.dev/content</li>
+      </ul>
+
+
+      <h2>get first and last paragraph</h2>
+      <pre><code class="language-js">
+const paragraphs = document.querySelectorAll('p');
+console.log(`First paragraph: ${paragraphs[0].textContent}`);
+console.log(`Last paragraph: ${paragraphs[paragraphs.length - 1].textContent}`);
+    </code></pre>
+
+      <p> First paragraph:
+        Dr. Vini Gora, a New Delhi-born vocalist now residing in Los Angeles, is a classically trained singer
+        with a PhD in
+        Hindustani classical music. She is a disciple of Pt. Balmiki Sharma [disciple of Ustad Ghulam Hussain
+        Khan of Rampur Sehaswan Gharana and Pt. Kundan Lal Sharma Bhoot of Patiala Gharana].
+        Last paragraph:
+        click/tap
+        to call
+      </p>
+      <p>
+        Last paragraph:
+        click/tap
+        to call
+      </p>
+
+      <h2>Basic page structure</h2>
+      <pre><code class="language-js">
+const sections = document.querySelectorAll('section');
+const headers = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+const paragraphs = document.querySelectorAll('p');
+console.log(`Total number of sections: ${sections.length}`);
+console.log(`Total number of headers: ${headers.length}`);
+console.log(`Total number of paragraphs: ${paragraphs.length}`);
+  </code></pre>
+    </section>
+    <p>
+      Total number of sections: 1
+      <br>
+      Total number of headers: 46
+      <br>
+      Total number of paragraphs: 23
+      <br>
+    </p>
+
+    <h2>get images and alternate text</h2>
+    <pre><code class="language-js">
+const images = document.querySelectorAll('img');
+images.forEach((image, index) => {
+console.log(`Image ${index + 1} alt text: ${image.alt}`);
+    });
+  </code></pre>
+    <p>
+      Image 1 alt text: Fish
+      <br>
+      Image 2 alt text: Aquariums & Tanks
+      <br>
+      Image 3 alt text: Pumps & Flow
+      <br>
+      Image 4 alt text: Filtration & Skimmers
+      <br>
+      Image 5 alt text: Lighting
+
+    </p>
+
+    <pre><code class="language-js">
+const structuredData = document.querySelectorAll('script[type="application/ld+json"]');
+structuredData.forEach(data => console.log(`Structured data: ${data.textContent}`));
+
+    </pre></code>
+    <h2>get structure data in JSON format</h2>
+    <p class="structured-data">
+      Structured data:
+      <br>
+      {
+      <br>
+      &nbsp;&nbsp; "@context": "https://schema.org",
+      <br>
+      &nbsp;&nbsp; "@type": "Organization",
+      <br>
+
+      &nbsp;&nbsp; "name": "The Co",
+      <br>
+
+      &nbsp;&nbsp; "url": "https://co.com/",
+      <br>
+
+      &nbsp;&nbsp; "logo": "https://co.com/wp-content/uploads/2023/02/White-Text-Co.png",
+      <br>
+
+      &nbsp;&nbsp; "contactPoint": {
+      <br>
+
+      &nbsp;&nbsp; "@type": "ContactPoint",
+      <br>
+
+      &nbsp;&nbsp; "telephone": "562-555-5555",
+      <br>
+
+      &nbsp;&nbsp; "contactType": "technical support",
+      <br>
+
+      &nbsp;&nbsp; "contactOption": "TollFree",
+      <br>
+
+      &nbsp;&nbsp; "areaServed": "US",
+      <br>
+
+      &nbsp;&nbsp; "availableLanguage": "en"
+      <br>
+
+      },
+      <br>
+      <br>
+      &nbsp;&nbsp; "sameAs": [
+      &nbsp;&nbsp; "https://www.facebook.com/The-Co-104347378904055",
+      <br>
+
+      &nbsp;&nbsp; "https://www.instagram.com/co/"
+      <br>
+      ]
+    </p>
+    <div>
+      <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+    </div>
+  </main>
+  <footer>
+    <hr>
+    <a href="https://github.com/kironroy/console-log">Link to Repository </a>
+  </footer>
+</body>
+
+</html>
