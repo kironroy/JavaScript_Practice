@@ -100,7 +100,6 @@ people.forEach(high5);
 
 logWithBlankLines('-- Functions Returning Functions --');
 
-
 // greet function returns another function
 const greet = function (greeting) {
   return function (name) {
@@ -123,5 +122,15 @@ console.log('');
 
 greetArrow('Yo!')('Mikey');
 
+logWithBlankLines('-- Returning two values at once --');
 
+const orderTwo = (a, b) => {
+  if (a > b) {
+    return [a, b];
+  } else {
+    return [b, a];
+  }
+};
 
+let [big, small] = orderTwo(5, 3);
+console.log(small, big);
