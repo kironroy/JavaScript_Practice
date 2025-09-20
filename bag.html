@@ -2,23 +2,76 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS Bag</title>
-    <link rel="stylesheet" href="site.css">
-    <script src="bag.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Bag</title>
+  <link rel="stylesheet" href="site.css">
+  <script type="module" src="bag.js"></script>
+
 </head>
 
 <body>
-    <main>
-        <h1>Bag</h1>
-        <p>
-            <a href="index.html">home</a>
-        </p>
-        <p>Please open the console. ➡️</p>
-        <p><code>Ctrl + Shift + J</code> to see the JavaScript console.</p>
+  <main>
+    <h1>Bag</h1>
+    <p>
+      <a href="index.html">home</a>
+    </p>
+    <p>Please open the console. ➡️</p>
+    <p><code>Ctrl + Shift + J</code> to see the JavaScript console.</p>
+    <p>A Bag (also known as a Multiset) is a classic abstract data type where duplicates are allowed, and order
+      doesn’t matter.
+      It’s useful when you care about how many times an item appears, but not about their sequence.</p>
 
-    </main>
+    <h2>What Is a Bag (Multiset)?</h2>
+    <ul>
+      <li>Allows duplicates — multiple instances of the same item are valid.</li>
+      <li>Ignores order — the sequence of items doesn’t matter.</li>
+      <li>Tracks frequency — records how many times each item appears.</li>
+    </ul>
+
+    <h2>Why Is a Bag Useful?</h2>
+    <h3>Ecological Sampling</h3>
+    <ul>
+      <li>Track species counts (e.g. phytoplankton, insects, birds).</li>
+      <li>Detect overrepresentation (e.g. harmful blooms like Pseudo-nitzschia).</li>
+      <li>Support citizen science and field data aggregation.</li>
+    </ul>
+
+    <h3>Inventory Management</h3>
+    <ul>
+      <li>Count items in stock, even if they’re identical.</li>
+      <li>Useful for games, retail, or supply chain simulations.</li>
+    </ul>
+
+    <h3>Data Analysis</h3>
+    <ul>
+      <li>Frequency analysis of words, tags, or events.</li>
+      <li>Great for histograms, token counts, or behavioral tracking.</li>
+    </ul>
+
+    <h3>Educational Games</h3>
+    <ul>
+      <li>Manage resources (e.g. coins, cards, ingredients).</li>
+      <li>Teach counting, probability, and categorization.</li>
+    </ul>
+
+    <h3>Print-Optimized Summaries</h3>
+    <ul>
+      <li>Convert raw data into readable summaries for reports or guides.</li>
+      <li>Ideal for field notes, outreach flyers, or classroom handouts.</li>
+    </ul>
+
+    <h3>Defensive Coding</h3>
+    <ul>
+      <li>Easy to validate thresholds (e.g. “too many of X”).</li>
+      <li>Supports alerts, filters, and conditional logic.</li>
+    </ul>
+
+
+    <p>JavaScript example is from <a href="http://oceandatacenter.ucsc.edu/PhytoGallery/phytolist.html">this
+        link.</a> </p>
+
+  </main>
 </body>
 
 </html>
