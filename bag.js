@@ -2,7 +2,7 @@
 
 import { logWithBlankLines } from './logBlankLines.js';
 
-logWithBlankLines('Phytoplankton sample complete.');
+logWithBlankLines('Phytoplankton weekly samples.');
 
 class PhytoplanktonBag {
   constructor() {
