@@ -1,6 +1,5 @@
 'use strict';
 
-// main.js
 import { logWithBlankLines } from './logBlankLines.js';
 
 logWithBlankLines('Phytoplankton sample complete.');
