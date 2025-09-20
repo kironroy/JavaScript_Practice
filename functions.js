@@ -1,12 +1,10 @@
 'use strict';
 
-console.log('-- Functions --');
+import { logWithBlankLines } from './logBlankLines.js';
 
-function logWithBlankLines(message) {
-  console.log('');
-  console.log(message);
-  console.log('');
-}
+logWithBlankLines('Phytoplankton sample complete.');
+
+console.log('-- Functions --');
 
 const bookingsArr = [];
 
