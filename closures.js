@@ -1,10 +1,9 @@
 'use strict';
 
-function logWithBlankLines(message) {
-  console.log('');
-  console.log(message);
-  console.log('');
-}
+
+import { logWithBlankLines } from './logBlankLines.js';
+
+logWithBlankLines('Phytoplankton sample complete.');
 
 // execution context
 // call stack
