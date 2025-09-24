@@ -312,3 +312,15 @@ caption {
     font-size: 1.05rem;
   }
 }
+
+/* Laptop/Desktop: Add horizontal margins */
+@media screen and (min-width: 1024px) {
+  body {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+   h1 {
+    margin-bottom: 50px;
+   }
+}
+
